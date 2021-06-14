@@ -37,18 +37,19 @@ COD 4 - Auriculares Philips in-ear */
 // Pedir un texto mediante prompt, concatenar un valor con cada repeticion, realizando una salida por cada resultado, hasta ingresar "ESC".
 let ingreso= prompt("ingrese una palabra");
     alert("la palabra ingresada es "+ ingreso);
-while((ingreso != "ESC") || (palabra != "ESC")){
+while(ingreso != "ESC"){
     
     let palabra= prompt("ingrese OTRA palabra");
     alert("la otra palabra ingresada es " +palabra)
    
-    ingreso= ingreso + " "+ palabra;
+    ingreso += " " +  palabra;
     alert(ingreso);
    
 }
     
    
 
+	
 
 // // Imprimir "hola"según el numero ingresado por el usuario.
 // let codigo = parseInt(prompt("¿Cuantas veces quiere imprimir HOLA?"));
